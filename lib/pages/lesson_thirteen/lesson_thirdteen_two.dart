@@ -1,7 +1,7 @@
 import 'package:flip_box_bar_plus/flip_box_bar_plus.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_speed_dial/flutter_speed_dial.dart';
-import 'package:curved_navigation_bar/curved_navigation_bar.dart';
+// import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 
 class LessonThirteenTwo extends StatefulWidget {
   static const id = "/lesson_thirteen_three";

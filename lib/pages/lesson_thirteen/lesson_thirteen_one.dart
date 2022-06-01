@@ -17,7 +17,7 @@ class _LessonThirteenOneState extends State<LessonThirteenOne> {
       // #appBar
       appBar: AppBar(
         centerTitle: true,
-        title: Text("Text Field", style: TextStyle(fontSize: 30)),
+        title: const Text("Text Field", style: TextStyle(fontSize: 30)),
       ),
 
       // #body
@@ -59,11 +59,53 @@ class _LessonThirteenOneState extends State<LessonThirteenOne> {
             // filled: true,
 
             // border: InputBorder.none
-            border: OutlineInputBorder(),
+            // border: OutlineInputBorder(),
 
-
-
+            hintText: "Flutter b-17",
           ),
+          // keyboardType: TextInputType.emailAddress,
+          keyboardType: TextInputType.name,
+
+          textInputAction: TextInputAction.go,
+          // textInputAction: TextInputAction.search,
+          // textInputAction: TextInputAction.newline,
+
+          textCapitalization: TextCapitalization.words,
+          // textCapitalization: TextCapitalization.none,
+
+          style: TextStyle(fontSize: 20),
+          textAlignVertical: TextAlignVertical.center,
+          readOnly: false,
+
+          toolbarOptions: ToolbarOptions(
+            copy: true,
+            paste: true,
+            cut: true,
+            selectAll: true,
+          ),
+
+          // klaviatura avtomatik chiqadi
+          autofocus: true,
+          // yozganda harflar nuqtaga aylanadi
+          // obscureText: true,
+          // bu harflarni stikerga aylantiradi
+          // obscuringCharacter: '\u2665',
+
+          // smartDashesType: SmartDashesType.disabled,
+          // smartQuotesType: SmartQuotesType.disabled,
+
+          autocorrect: true,
+          // maxLength: 10,
+          // minLines: 1,
+          // maxLines: 10,
+          // expands: true,
+
+          // cursorColor: Colors.blue,
+          // cursorHeight: 35,
+          // cursorWidth: 10,
+          // cursorRadius: Radius.circular(10),
+
+          restorationId: "Hello",
         ),
       ),
     );
